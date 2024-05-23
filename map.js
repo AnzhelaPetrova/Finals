@@ -18,7 +18,7 @@ require([
         Directions,
         RouteLayer
     ) {
-        //esriConfig.apiKey = 
+        esriConfig.apiKey = "AAPK77ebc8a134de4074a160da0e32d0d877onv_cK6xV7_3fD5hbgt8oYIPGcwHVf3SZVZkhweY7eONVEXqwdhRAkgphMmXCg9x"
         
         const routeLayer = new RouteLayer();
 
