@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+#home {
+    text-align: center;
+}
+
+#home ul {
+    list-style: none;
+    padding: 0;
+}
+
+#home ul li {
+    margin: 0.5rem 0;
+}
+
+#home img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+#courses article {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+#contacts p, #register-login .forms {
+    margin: 1rem 0;
+}
+
+.forms {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 45%;
+}
+
+form h3 {
+    margin-top: 0;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

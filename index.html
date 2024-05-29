@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн обучения</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Начало</a></li>
+                <li><a href="#courses">Курсове</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+                <li><a href="#register-login">Регистрация и Вход</a></li>
+            </ul>
+        </nav>
+        <h1>Лого</h1>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Център за обучение по софтуерно инженерство</h2>
+            <p>Започни работа в IT сферата!</p>
+            <ul>
+                <li>Практическо обучение в малки групи</li>
+                <li>Опитни преподаватели</li>
+                <li>Сертификат</li>
+            </ul>
+            <img src="path/to/your/image.jpg" alt="Обучение">
+            <button onclick="document.getElementById('courses').scrollIntoView()">Предстоящи курсове</button>
+        </section>
+        <section id="courses">
+            <article>
+                <header>
+                    <h3>Софтуерно тестване</h3>
+                    <p>Стартира на: дата</p>
+                    <p>2 – месечен курс</p>
+                    <p>Ниво: За начинаещи</p>
+                </header>
+            </article>
+            <article>
+                <header>
+                    <h3>Web програмиране с HTML, CSS и JS</h3>
+                    <p>Стартира на: дата</p>
+                    <p>2 – месечен курс</p>
+                    <p>Ниво: За начинаещи</p>
+                </header>
+            </article>
+            <article>
+                <header>
+                    <h3>ArcGIS JS API</h3>
+                    <p>Стартира на: дата</p>
+                    <p>4 – месечен курс</p>
+                    <p>Ниво: За напреднали</p>
+                </header>
+            </article>
+        </section>
+        <section id="contacts">
+            <h2>Контакти</h2>
+            <p>Адрес: София, ул. Примерна 123</p>
+            <p>Телефон: 0888 123 456</p>
+            <p>Email: info@example.com</p>
+        </section>
+        <section id="register-login">
+            <h2>Регистрация и Вход</h2>
+            <div class="forms">
+                <form class="register-form">
+                    <h3>Регистрация</h3>
+                    <label for="reg-name">Име:</label>
+                    <input type="text" id="reg-name" name="reg-name" required>
+                    <label for="reg-email">Email:</label>
+                    <input type="email" id="reg-email" name="reg-email" required>
+                    <label for="reg-password">Парола:</label>
+                    <input type="password" id="reg-password" name="reg-password" required>
+                    <button type="submit">Регистрация</button>
+                </form>
+                <form class="login-form">
+                    <h3>Вход</h3>
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="login-email" required>
+                    <label for="login-password">Парола:</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                    <button type="submit">Вход</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Център за обучение по софтуерно инженерство</p>
+    </footer>
+</body>
+</html>
