@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Онлайн обучения</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </head>
-<body>
+<body onload="showSection('home')">
     <header>
         <div class="logo-wrapper">
             <img src="https://img.freepik.com/free-vector/education-business-logo-template-branding-design-vector-education-center-text_53876-136247.jpg" alt="Logo">
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Начало</a></li>
-                <li><a href="#courses">Курсове</a></li>
-                <li><a href="#contacts">Контакти</a></li>
-                <li><a href="#register-login">Регистрация и Вход</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('home')">Начало</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('courses')">Курсове</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('contacts')">Контакти</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('register-login')">Регистрация и Вход</a></li>
             </ul>
         </nav>
     </header>
@@ -29,8 +38,8 @@
                 <li>Опитни преподаватели</li>
                 <li>Сертификат</li>
             </ul>
-            <img src="https://cdn.vectorstock.com/i/500p/43/98/student-education-logo-vector-14724398.jpg" alt="Обучение">
-            <button onclick="document.getElementById('courses').scrollIntoView()">Предстоящи курсове</button>
+            <img src="https://www.example.com/image.jpg" alt="Обучение">
+            <button onclick="showSection('courses')">Предстоящи курсове</button>
         </section>
         <section id="courses">
             <article>

@@ -36,6 +36,7 @@ main {
 }
 
 section {
+    display: none;
     margin-bottom: 40px;
 }
 
@@ -63,6 +64,7 @@ section {
 #courses {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 #courses article {
@@ -78,6 +80,10 @@ section {
     height: auto;
 }
 
+#courses article p {
+    margin: 5px 0;
+}
+
 #contacts h2, #register-login h2 {
     color: #00796b;
 }
@@ -85,6 +91,7 @@ section {
 .forms {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 form {
