@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="bg">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,18 +13,20 @@
                 section.style.display = 'none';
             });
             if (sectionId != 'courses') {
-            document.getElementById(sectionId).style.display = 'block';
+                document.getElementById(sectionId).style.display = 'block';
             }
             else {
-                document.getElementById(sectionId).style.display = 'flex'  
+                document.getElementById(sectionId).style.display = 'flex'
             }
         }
     </script>
 </head>
+
 <body onload="showSection('home')">
     <header>
         <div class="logo-wrapper">
-            <img src="https://img.freepik.com/free-vector/education-business-logo-template-branding-design-vector-education-center-text_53876-136247.jpg" alt="Logo">
+            <img src="https://img.freepik.com/free-vector/education-business-logo-template-branding-design-vector-education-center-text_53876-136247.jpg"
+                alt="Logo">
         </div>
         <h2>Център за обучение по софтуерно инженерство</h2>
         <nav>
@@ -37,44 +40,71 @@
     </header>
     <main>
         <section id="home">
-            <p>Започни работа в IT сферата!</p>
-            <article class = "article_container">
-                <h2>Практическо обучение в малки групи</h2>
-                <img src="https://cdn.britannica.com/30/199930-131-B3D1D347/computer.jpg" alt="Практическо обучение в малки групи">
-                <header class = "article_text_container">
-                <h3>Студентите получават възможност за активно участие и индивидуално внимание в малки групи, което гарантира по-ефективно усвояване на материала и развитие на практическите умения.</h3>
-            </header>
+            <div style= "display: flex; justify-content: center;">
+                <p style="font-size: x-large; color: rgb(7, 116, 79); font-weight: bold;">Започни работа в IT сферата!
+                </p>
+            </div>
+            <article class="home_article_container">
+                <div class="image_container">
+                    <img src="https://s39613.pcdn.co/wp-content/uploads/2021/06/positive-excited-multiethnic-students-in-casual-clothing-lying-on-in-picture-id1185581975.jpg" style="max-height: 100%;"
+                        alt="Практическо обучение в малки групи">
+                </div>
+                <header class="text_container">
+                    <h2 style = "color: aliceblue;">Практическо обучение в малки групи</h2>
+                    <p style = "font-size: large;">Студентите получават възможност за активно участие и индивидуално внимание в малки групи, което
+                        гарантира по-ефективно усвояване на материала и развитие на практическите умения.</p>
+                </header>
             </article>
-            <ul>
-                <li>Практическо обучение в малки групи</li>
-                <li>Опитни преподаватели</li>
-                <li>Сертификат</li>
-            </ul>
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/020/576/375/small/computer-screen-logo-design-with-bachelor-cap-combination-education-screen-logo-vector.jpg" alt="Обучение">
-            <button onclick="showSection('courses')">Предстоящи курсове</button>
+
+            <article class="home_article_container" style = "flex-direction: row-reverse;">
+                <div class="image_container">
+                    <img src="https://www.nea.org/sites/default/files/styles/1200x675/public/2023-08/professional-teacher-at-whiteboard.jpg?itok=3FNDsKyl" style="max-height: 100%;"
+                        alt="Опитни преподаватели">
+                </div>
+                <header class="text_container">
+                    <h2 style = "color: aliceblue;">Опитни преподаватели</h2>
+                    <p style = "font-size: large;">Обучението се осъществява от опитни преподаватели с богат опит в софтуерната индустрия. Техните практически знания и умения допринасят за качеството на обучението и гарантират актуалността на предавания материал.</p>
+                </header>
+            </article>
+
+            <article class="home_article_container">
+                <div class="image_container">
+                    <img src="https://cdn.create.vista.com/downloads/be075c08-bd06-4d05-8921-dc0ca5dc176c_1024.jpeg" style="max-height: 100%;"
+                        alt="Сертификат">
+                </div>
+                <header class="text_container">
+                    <h2 style = "color: aliceblue;">Сертификат</h2>
+                    <p style = "font-size: large;">След успешното завършване на курса студентите получават сертификат, удостоверяващ придобитите компетенции и готовността им за пристъпване към практическата работа в софтуерната индустрия.</p>
+                </header>
+            </article>
+            <div style="display: flex; justify-content: center;">
+            <button style="font-size: x-large; margin-top : 25px; border-radius: 4px;" onclick="showSection('courses')">Предстоящи курсове</button>
+            </div>
         </section>
         <section id="courses">
-            <article class = "article_container">
-                <img src="https://global-uploads.webflow.com/619e15d781b21202de206fb5/6304ea816823cf0a4b06f777_what-is-testing.jpg" alt="Софтуерно тестване">
-                <header class = "article_text_container">
+            <article class="article_container">
+                <img src="https://global-uploads.webflow.com/619e15d781b21202de206fb5/6304ea816823cf0a4b06f777_what-is-testing.jpg"
+                    alt="Софтуерно тестване">
+                <header class="article_text_container">
                     <h3>Софтуерно тестване</h3>
                     <p>Стартира на: 05.06.2024 г.</p>
                     <p>2 – месечен курс</p>
                     <p>Ниво: За начинаещи</p>
                 </header>
             </article>
-            <article class = "article_container">
-                <img src="https://cdn.britannica.com/30/199930-131-B3D1D347/computer.jpg" alt="Web програмиране с HTML, CSS и JS">
-                <header class = "article_text_container">
+            <article class="article_container">
+                <img src="https://cdn.britannica.com/30/199930-131-B3D1D347/computer.jpg"
+                    alt="Web програмиране с HTML, CSS и JS">
+                <header class="article_text_container">
                     <h3>Web програмиране с HTML, CSS и JS</h3>
                     <p>Стартира на: 12.06.2024 г.</p>
                     <p>2 – месечен курс</p>
                     <p>Ниво: За начинаещи</p>
                 </header>
             </article>
-            <article class = "article_container">
+            <article class="article_container">
                 <img src="https://corneltudose.ro/wp-content/uploads/2016/09/arcgisapi.png" alt="ArcGIS JS API">
-                <header class = "article_text_container">
+                <header class="article_text_container">
                     <h3>ArcGIS JS API</h3>
                     <p>Стартира на: 28.06.2024 г.</p>
                     <p>4 – месечен курс</p>
@@ -93,30 +123,30 @@
             <div class="forms">
                 <form class="register-form">
                     <h3>Регистрация</h3>
-                <div class="fields_container">
-                    <label for="reg-name">Име:</label>
-                    <input type="text" id="reg-name" name="reg-name" required>
-                </div>
-                <div class="fields_container">
-                    <label for="reg-email">Email:</label>
-                    <input type="email" id="reg-email" name="reg-email" required>
-                </div>
-                <div class="fields_container">
-                    <label for="reg-password">Парола:</label>
-                    <input type="password" id="reg-password" name="reg-password" required>
-                </div>
+                    <div class="fields_container">
+                        <label for="reg-name">Име:</label>
+                        <input type="text" id="reg-name" name="reg-name" required>
+                    </div>
+                    <div class="fields_container">
+                        <label for="reg-email">Email:</label>
+                        <input type="email" id="reg-email" name="reg-email" required>
+                    </div>
+                    <div class="fields_container">
+                        <label for="reg-password">Парола:</label>
+                        <input type="password" id="reg-password" name="reg-password" required>
+                    </div>
                     <button type="submit">Регистрация</button>
                 </form>
                 <form class="login-form">
                     <h3>Вход</h3>
-                <div class="fields_container">
-                    <label for="login-email">Email:</label>
-                    <input type="email" id="login-email" name="login-email" required>
-                </div>
-                <div class="fields_container">
-                    <label for="login-password">Парола:</label>
-                    <input type="password" id="login-password" name="login-password" required>
-                </div>
+                    <div class="fields_container">
+                        <label for="login-email">Email:</label>
+                        <input type="email" id="login-email" name="login-email" required>
+                    </div>
+                    <div class="fields_container">
+                        <label for="login-password">Парола:</label>
+                        <input type="password" id="login-password" name="login-password" required>
+                    </div>
                     <button type="submit">Вход</button>
                 </form>
             </div>
@@ -126,4 +156,5 @@
         <p>&copy; 2024 Център за обучение по софтуерно инженерство</p>
     </footer>
 </body>
+
 </html>
