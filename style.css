@@ -73,7 +73,8 @@ section {
 #courses {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 #courses article {
