@@ -13,6 +13,15 @@ header {
     padding: 10px 20px;
     color: white;
 }
+.article_text_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #00796b;
+    padding: 10px 20px;
+    color: white;
+    flex-direction: column;
+}
 
 .logo-wrapper img {
     height: 50px;
