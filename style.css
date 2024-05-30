@@ -16,7 +16,6 @@ header {
 
 .logo-wrapper img {
     height: 50px;
-    margin-bottom: 20px;
 }
 
 nav ul {
@@ -79,6 +78,7 @@ section {
 #courses article img {
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
 }
 
 #courses article p {
