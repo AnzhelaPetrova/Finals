@@ -138,3 +138,7 @@ footer {
     background-color: #00796b;
     color: white;
 }
+
+.fields_container {
+    margin-right: 3rem;
+}
